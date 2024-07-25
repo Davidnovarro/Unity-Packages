@@ -39,18 +39,18 @@ Create a `package.json` file in the `FacebookSDK` folder with the following cont
 
 1. Open any Unity project.
 2. Open any script in the Unity project.
-3. Call the following method in the script to create a .tgz file: `UnityEditor.PackageManager.Client.Pack("C:/FacebookSDK", "C:/FacebookSDK");`
+3. Call the following method in the script to create a .tgz file:<br>`UnityEditor.PackageManager.Client.Pack("C:/FacebookSDK", "C:/FacebookSDK");`
 4. Export the .tgz file content into a package folder next to it
 
 ### 4. Import the Package
 
-<B>Option 1:</b> Open Unity Package Manager > Add package from git URL : `https://github.com/Davidnovarro/Unity-Packages.git?path=/Facebook/17.0.1/package`
-<br>
-<B>Option 2:</b> Modify the `manifest.json` to import the local .tgz as a package by adding the following line `file: "com.facebook": "file:../Assets/Packages/com.facebook.tgz"`
-<br>
-<br>
+<B>Option 1:</b> Open Unity Package Manager > Add package from git URL : <br> `https://github.com/Davidnovarro/Unity-Packages.git?path=/Facebook/17.0.1/package`
+
+<B>Option 2:</b> Modify the `manifest.json` to import the local .tgz as a package by adding the following line file: <br> `"com.facebook": "file:../Assets/Packages/com.facebook.tgz"`
+<br><br>
+
 ### ⚠️ Warning: Unity ignores `link.xml` files located in the Packages folder, which are used to preserve assembly files.
-#### One of the ways to fix it is to include a the following Editor script in the package.
+#### One of the ways to fix it is to include the following Editor script in the package.
 ```
 #if UNITY_EDITOR
 using System.IO;
