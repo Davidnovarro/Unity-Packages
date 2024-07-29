@@ -50,3 +50,6 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Important! We should track all files that may be ignored in Global Git Config
+!*~
