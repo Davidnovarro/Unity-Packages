@@ -42,7 +42,7 @@ namespace Facebook.Unity.PostProcess
     
         
         [PostProcessBuild(int.MaxValue)]
-        public static void MaxPostProcessPbxProject(BuildTarget buildTarget, string buildPath)
+        public static void PostProcessPbxProject(BuildTarget buildTarget, string buildPath)
         {
             var projectPath = PBXProject.GetPBXProjectPath(buildPath);
             var project = new PBXProject();
