@@ -1,0 +1,19 @@
+{
+  "name": "com.tenjin",
+  "version": "1.15.10",
+  "displayName": "Tenjin SDK",
+  "keywords": [
+    "Tenjin",
+    "MMP",
+    "SDK"
+  ],
+  "author": {
+    "name": "Tenjin SDK",
+    "url": "https://github.com/tenjin/tenjin-unity-sdk"
+  },
+  "description": "Tenjin SDK (custom created package by @davitmk)",
+  "unity": "2021.1",
+  "dependencies": {
+      "com.google.external-dependency-manager": "1.2.185"
+  }
+}
