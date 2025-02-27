@@ -1,4 +1,6 @@
-﻿using System;
+﻿// @davitmk added this UNITY_EDITOR definition because, without it, the script could be included in the build—even though it's in the Editor folder—due to the .asmdef file.
+#if UNITY_EDITOR
+using System;
 using System.Linq;
 using UnityEngine;
 using UnityEditor;
@@ -149,3 +151,4 @@ namespace TenjinSDK
         #endregion
     }
 }
+#endif
