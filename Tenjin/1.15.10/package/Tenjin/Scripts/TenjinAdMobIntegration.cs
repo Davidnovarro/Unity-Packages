@@ -65,7 +65,7 @@ namespace TenjinSDK
         }
 
 #if tenjin_admob_enabled
-    private static void SubscribeToAd<T>(T ad, string adUnitId, Action<string> callback, ref bool subscribedFlag, Action<T, GoogleMobileAds.Api.AdValueEventArgs> adPaidHandler)
+    private static void SubscribeToAd<T>(T ad, string adUnitId, Action<string> callback, ref bool subscribedFlag, Action<T, GoogleMobileAds.Api.AdValue> adPaidHandler)
     {
         if (subscribedFlag)
         {
