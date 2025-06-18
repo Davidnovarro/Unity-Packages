@@ -1,0 +1,21 @@
+{
+    "name": "com.tiktok",
+    "version": "1.4.1",
+    "displayName": "Tiktok Business SDK",
+    "keywords": [
+      "Tiktok",
+      "Business",
+      "SDK",
+      "App",
+      "Events"
+    ],
+    "author": {
+      "name": "Tiktok Business SDK",
+      "url": "https://github.com/tiktok/tiktok-business-unity-sdk"
+    },
+    "description": "Tiktok Business SDK (custom created package by @davitmk)",
+    "unity": "2021.1",
+    "dependencies": {
+      "com.unity.nuget.newtonsoft-json": "3.2.1"
+    }
+  }
